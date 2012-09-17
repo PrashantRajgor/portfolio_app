@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= f.label :company_id %><br />
-    <%= f.collection_select(:company_id,Company.all,:id,:symbol) %>
+    <%= f.collection_select(:company_id,Company.all,:id,:name) %>
   </div>
   <div class="field">
     <%= f.label :cost %><br />
@@ -25,7 +25,7 @@
   </div>
   <div class="field">
     <%= f.label :portfolio_id %><br />
-    <%= f.collection_select(:portfolio_id,Portfolio.all,:id,:id) %>
+    <%= f.collection_select(:portfolio_id,Company.all,:id,:id) %>
   </div>
   <div class="actions">
     <%= f.submit %>
